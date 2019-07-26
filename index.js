@@ -43,10 +43,10 @@ function viewCart() {
 
 function total() {
   // write your code here
-  var total = 0
-  for (var i = 0; i < cart.length - 1; i++) {
-  total += cart[i].itemPrice 
-  return total
+  var totalPrice = 0
+  for (var i = 0; i < cart.length; i++) {
+  totalPrice += cart[i].itemPrice 
+  return totalPrice
   }
 }
 
