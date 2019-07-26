@@ -29,13 +29,13 @@ function viewCart() {
        string = 'Your shopping cart is empty.'
        } 
     else if (cart.length === 1 && i === 0) {
-      string += `${Object.keys(cart[0])} at $${Object.values(cart[0])}.`
+      string += `${cart[i].itemName} at $${cart[i].itemPrice}.`
         } 
     else if (i < cart.length-1) {
-      string += `${Object.keys(cart[i])} at $${Object.values(cart[i])}, `
+      string += `${cart[i].itemName} at $${cart[i].itemPrice}, `
         }
     else if (i === cart.length - 1 && cart.length > 1) {
-       string += `and ${Object.keys(cart[i])} at $${Object.values(cart[i])}.`
+       string += `and ${cart[i].itemName} at $${cart[i].itemPrice}.`
         }
       }
   return string
