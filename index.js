@@ -24,7 +24,7 @@ function viewCart() {
        string = 'Your shopping cart is empty.'
        } 
       else if (i === cart.length - 1) {
-        string+= `${Object.keys(cart[i])} at $${Object.values(cart[i])}`
+        string+= `${Object.keys(cart[i])} at $${Object.values(cart[i])}.`
       } 
       else if (i >= 1 && cart.length > 1) {
       string += `${Object.keys(cart[i])} at $${Object.values(cart[i])}, `
