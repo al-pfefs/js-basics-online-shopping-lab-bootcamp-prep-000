@@ -10,10 +10,17 @@ function setCart(c) {
 }
 
 function addToCart(item) {
-  var price = Math.floor(Math.random()*99)
-  cart.push(new Object({[item]:price}))
-  console.log(`${item} has been added to your cart.`)
-  return cart
+  let min = 1
+  let max = 100
+  let random = Math.floor(Math.random() * (max - min)) + min
+  
+   var itemHash = {
+     itemName: item,
+     itemPrice: random
+   }
+   
+   cart.push(itemHash)
+   return `${cart[cart.length - 1].itemName} has been added to your cart.`
 }
 
 function viewCart() {
