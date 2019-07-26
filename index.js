@@ -10,11 +10,11 @@ function setCart(c) {
 }
 
 function addToCart(item) {
-  let price = Math.floor(Math.random())
+  let price = Math.floor(Math.random()*99)
   
    var itemHash = {
      itemName: item,
-     itemPrice: random
+     itemPrice: price
    }
    
    cart.push(itemHash)
