@@ -53,6 +53,8 @@ function removeFromCart(item) {
   for (i = 0; i < cart.length; i++) {
     items.push(cart[i].itemName)
   }
+  
+  
 }
 
 function placeOrder(cardNumber) {
