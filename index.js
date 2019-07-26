@@ -54,7 +54,12 @@ function removeFromCart(item) {
     items.push(cart[i].itemName)
   }
   
-  
+  if items.includes(item) {
+    
+  }
+  else {
+    return "That item is not in your cart."
+  }
 }
 
 function placeOrder(cardNumber) {
