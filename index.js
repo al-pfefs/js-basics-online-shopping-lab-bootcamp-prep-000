@@ -56,7 +56,7 @@ function removeFromCart(item) {
   console.log(items)
   
   if (items.includes(item)) {
-    itemIndex = items.indexOf(item)
+    var itemIndex = items.indexOf(item)
     cart.splice(itemIndex,1)
     return cart
   }
