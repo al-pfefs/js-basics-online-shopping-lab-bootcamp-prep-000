@@ -57,6 +57,7 @@ function removeFromCart(item) {
   if items.includes(item) {
     itemIndex = items.indexOf(item)
     cart.splice(i,1)
+    return cart
   }
   else {
     return "That item is not in your cart."
