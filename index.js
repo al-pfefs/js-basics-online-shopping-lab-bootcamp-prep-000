@@ -10,9 +10,7 @@ function setCart(c) {
 }
 
 function addToCart(item) {
-  let min = 1
-  let max = 100
-  let random = Math.floor(Math.random() * (max - min)) + min
+  let price = Math.floor(Math.random())
   
    var itemHash = {
      itemName: item,
