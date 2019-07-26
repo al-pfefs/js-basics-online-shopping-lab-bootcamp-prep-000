@@ -23,7 +23,7 @@ function viewCart() {
     if (cart.length === 0) {
        string = 'Your shopping cart is empty.'
        } 
-      else if (i === cart.length) {
+      else if (i === cart.length - 1) {
         string+= `${Object.keys(cart[0])} at $${Object.values(cart[0])}`
       } 
       else if (i < cart.length  && cart.length > 1) {
