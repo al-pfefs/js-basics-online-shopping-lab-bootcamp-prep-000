@@ -56,7 +56,7 @@ function removeFromCart(item) {
   
   if items.includes(item) {
     itemIndex = items.indexOf(item)
-    cart.splice(i,1)
+    cart.splice(itemIndex,1)
     return cart
   }
   else {
