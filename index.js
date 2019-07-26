@@ -23,6 +23,10 @@ function viewCart() {
     if (cart.length === 0) {
        string = 'Your shopping cart is empty.'
        } 
+  }
+  return string
+}
+       
     else if (cart.length === 1 && i === 0) {
       string += `${Object.keys(cart[0])} at $${Object.values(cart[0])}.`
         } 
