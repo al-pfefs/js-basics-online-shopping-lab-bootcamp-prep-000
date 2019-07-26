@@ -31,7 +31,7 @@ function viewCart() {
     else if (cart.length === 1 && i === 0) {
       string += `${cart[i].itemName} at $${cart[i].itemPrice}.`
         } 
-    else if (i < cart.length-1) {
+    else if (i < cart.length - 1) {
       string += `${cart[i].itemName} at $${cart[i].itemPrice}, `
         }
     else if (i === cart.length - 1 && cart.length > 1) {
@@ -44,7 +44,7 @@ function viewCart() {
 function total() {
   // write your code here
   var total = 0
-  for (var i = 0; i < cart.length; i++) {
+  for (var i = 0; i < cart.length - 1; i++) {
   total += cart[i].itemPrice 
   return total
   }
