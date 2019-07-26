@@ -26,12 +26,13 @@ function viewCart() {
     else if (cart.length === 1 && i === 0) {
       string += `${Object.keys(cart[0])} at $${Object.values(cart[0])}.`
         } 
-  }
-  return string 
-}
     else if (i >= 1 && cart.length >= 1) {
       string += `${Object.keys(cart[i])} at $${Object.values(cart[i])}, `
         }
+  }
+  return string
+}
+        
     else if (i === cart.length - 1 && cart.length > 1) {
        string += `and ${Object.keys(cart[i])} at $${Object.values(cart[i])}.`
         }
