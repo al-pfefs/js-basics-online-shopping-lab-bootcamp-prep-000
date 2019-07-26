@@ -50,7 +50,7 @@ function total() {
 
 function removeFromCart(item) {
   var items = []
-  for (i = 0; i < cart.length; i++) {
+  for (var i = 0; i < cart.length; i++) {
     items.push(cart[i].itemName)
   }
   console.log(items)
