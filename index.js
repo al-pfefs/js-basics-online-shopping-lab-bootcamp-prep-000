@@ -22,7 +22,6 @@ function addToCart(item) {
 }
 
 function viewCart() {
-  // write your code here
   var string = 'In your cart, you have '
   for (var i = 0; i <= cart.length; i++) {
     if (cart.length === 0) {
@@ -42,7 +41,6 @@ function viewCart() {
 }
 
 function total() {
-  // write your code here
   var totalPrice = 0
   for (var i = 0; i < cart.length; i++) {
   totalPrice += cart[i].itemPrice 
