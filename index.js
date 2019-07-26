@@ -49,7 +49,10 @@ function total() {
 }
 
 function removeFromCart(item) {
-  
+  items = []
+  for (i = 0; i < cart.length; i++) {
+    
+  }
 }
 
 function placeOrder(cardNumber) {
