@@ -29,8 +29,9 @@ function viewCart() {
       else {
         string += `${Object.keys(cart[i])} at $${Object.values(cart[i])}, `
     }
+    return string
   }
-  return string
+
 }
     
     
