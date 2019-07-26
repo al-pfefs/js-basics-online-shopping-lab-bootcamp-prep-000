@@ -26,7 +26,7 @@ function viewCart() {
       else if (i === cart.length - 1) {
         string+= `${Object.keys(cart[i])} at $${Object.values(cart[i])}`
       } 
-      else if (i > 0 && cart.length > 1) {
+      else if (i >= 1 && cart.length > 1) {
       string += `${Object.keys(cart[i])} at $${Object.values(cart[i])}, `
     }
       else if (i === cart.length - 1 && cart.length > 1) {
