@@ -18,7 +18,7 @@ function addToCart(item) {
    }
    
    cart.push(itemHash)
-   return `${cart[cart.length - 1].itemName} has been added to your cart.`
+   return `${item} has been added to your cart.`
 }
 
 function viewCart() {
